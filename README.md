@@ -121,7 +121,7 @@ initial_state: SLRState = {
 
 To support reproducibility and transparency, the system includes built-in traceability mechanisms across the entire multi-agent pipeline.
 
-Each agent emits structured logs during execution (e.g., identification, screening decisions, extraction outputs, and validation outcomes), allowing users to trace how a final conclusion was derived. Intermediate states can be serialized and exported as JSON, capturing the full lifecycle of the SLR workflow—from raw query to final consensus report.
+Each agent emits structured logs during execution (e.g., identification, screening decisions, extraction outputs, and validation outcomes), allowing users to trace how a final conclusion was derived. Intermediate states can be serialized and exported as JSON, capturing the full lifecycle of the SLR workflow, from raw query to final consensus report.
 
 Key Capabilities
 <ul>
@@ -241,7 +241,7 @@ Total Papers Analyzed: 7
 <ul>
 <li>Engine: powered by LangGraph within a FastAPI wrapper, providing a stateful, iterative reasoning process.
 <li>Environment: packaged as a Docker container and hosted on Amazon ECR.
-<li>Orchestration: deployed via Amazon Bedrock AgentCore. This allows the system to remain stateless and purely consumption-based—only incurring costs when an interpretation is requested.
+<li>Orchestration: deployed via Amazon Bedrock AgentCore. This allows the system to remain stateless and purely consumption-based—only, incurring costs when an interpretation is requested.
 </ul>
 Sample configuration can be viewed at my other paper: <a href="https://github.com/adityatw/var-intel-cell">Variant Intelligence Cell (VIC)</a>
 
