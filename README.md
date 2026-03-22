@@ -94,7 +94,7 @@ graph TD
 
     %% Styling
     style AgentsSub fill:#5683c8,stroke:#01579b,stroke-width:2px
-    style Root fill:#,stroke:#333,stroke-width:2px
+    style Root fill:#e6e6d8,stroke:#333,stroke-width:2px
 ```
 
 ### Sample initial input payload
