@@ -54,8 +54,8 @@ graph TD
     Graph --> Consensus[Consensus Synthesizer<br/><i>Generate Summary</i>]
     Consensus --> End((FINAL REPORT))
 
-    style Extract fill:#006100,stroke:#333,stroke-width:2px
-    style Consensus fill:#b22222,stroke:#d4a017
+    style Extract fill:#aaba99,stroke:#333,stroke-width:2px
+    style Consensus fill:#ff7e70,stroke:#d4a017
 
 ```
 
