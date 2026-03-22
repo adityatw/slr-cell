@@ -94,7 +94,7 @@ graph TD
 
     %% Styling
     style AgentsSub fill:#5683c8,stroke:#01579b,stroke-width:2px
-    style Root fill:#615678,stroke:#333,stroke-width:2px
+    style Root fill:#,stroke:#333,stroke-width:2px
 ```
 
 ### Sample initial input payload
@@ -282,6 +282,33 @@ This observability layer enables performance tuning, cost optimization, and oper
 <li>PRISMA-compliant systematic review outputs.</li>
 <li>Expanded entity/relationship extraction (multi-domain).</li> 
 <li>Improved LLM repair strategies for JSON extraction.</li> </ul>
+
+## Environment specifications
+To ensure reproducibility and performance consistency, the **VIC** pipeline was developed and validated in the following environment:
+
+| Component        | Specification |
+|:-----------------|:--------------|
+| **Workstation OS** | Ubuntu 24.04.3 LTS (Noble Numbat) |
+| **Development runtime** | Python 3.13 |
+| **Compute/Docker build** | AWS EC2 t4g.small (2 vCPUs, ARM64 Graviton) |
+| **Base AMI** | al2023-ami-2023.9.20251208.0-kernel-6.1-arm64 |
+| **Architecture** | Linux/arm64 |
+| **Container runtime** | Python 3.11-slim (Docker/ARM64) |
+
+## 📖 Citation & acknowledgments
+
+If you find this work useful, please cite or link to this GitHub repository. You are welcome to adapt and extend the ideas presented here, provided that appropriate credit is given.
+
+📚 BibTeX
+```
+@software{SLRMultiAgentSystem2026,
+  author       = {Aditya Wresniyandaka},
+  title        = {SLR Multi-Agent System for Biomedical Knowledge Extraction},
+  year         = {2026},
+  url          = {https://github.com/adityatw/slr-cell},
+  note         = {LLM-Powered Multi-Agent AI for Transforming Systematic Reviews in Genomics & Biomedicine}
+}
+```
 
 ### AI Collaboration Disclosure
 This project utilizes AI-assisted documentation. <b>ChatGPT</b> was used to synthesize technical findings and refine the architectural presentation found in this README. This disclosure maintains transparency regarding the role of generative AI in augmenting human-led research and development.
