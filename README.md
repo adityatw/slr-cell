@@ -232,7 +232,7 @@ Priority Breakdown:
 
 Total Papers Analyzed: 7
 ```
-### Sample paper metadata stored as a node in Neo4j
+### Sample paper metadata stored as nodes in Neo4j
 
 <img src="images/slr_sample_node.png" alt="A paper metadata stored as a node in Neo4j" width = '80%'>
 
