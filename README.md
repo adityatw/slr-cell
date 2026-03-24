@@ -1,11 +1,11 @@
 # 🧬 SLR Multi-Agent System for Biomedical Knowledge Extraction
-## LLM-Powered Multi-Agent AI for Transforming Systematic Reviews in Genomics & Biomedicine
+## LLM-powered multi-agent AI for transforming systematic reviews in Genomics & Biomedicine
 ### Author: Aditya Wresniyandaka, Spring 2026
-## 🔬 Project Overview: Systematic Literature Review (SLR) Multi-Agent Knowledge Extraction
+## 🔬 Project overview: Systematic Literature Review (SLR) multi-agent knowledge extraction
 
 The pace of biomedical literature growth far outstrips human ability to synthesize insights. A single systematic review may involve hundreds of publications across multiple domains and study types.
 
-This SLR Multi-Agent System automates literature triage, structured knowledge extraction, validation, and consensus synthesis using Amazon Nova 2 Lite and a LangGraph orchestration engine.
+This SLR multi-agent system automates literature triage, structured knowledge extraction, validation, and consensus synthesis using Amazon Nova 2 Lite and a LangGraph orchestration engine.
 
 The architecture follows <a href="https://www.prisma-statement.org/">PRISMA</a> guidelines, ensuring transparent inclusion/exclusion criteria, reproducible evidence extraction, and structured reporting of key findings. Each agent in the system mirrors a step in the SLR workflow, from document identification and de-duplication, through screening and data extraction, to validation, prioritization, and consensus synthesis.
 
@@ -13,7 +13,7 @@ The architecture follows <a href="https://www.prisma-statement.org/">PRISMA</a> 
 
 Unlike a simple linear pipeline, the SLR system operates as a directed acyclic graph (DAG) of collaborating agents. Each invocation creates an ephemeral reasoning cell where agents communicate, validate, and reconcile findings.
 
-### 🤖 The Multi-Agent ensemble
+### 🤖 The multi-agent ensemble
 <ol> 
 <li>
 <b>Intake & Normalization Agents</b> 
@@ -59,9 +59,9 @@ graph TD
 
 ```
 
-## 🌐 Stateless Execution & Architectural Design
+## 🌐 Stateless execution & architectural design
 
-The SLR Multi-Agent system leverages a stateless reasoning cell model, inspired by serverless design patterns:
+The SLR multi-agent system leverages a stateless reasoning cell model, inspired by serverless design patterns:
 
 <ul>
 <li><b>Instantiation:</b> each query spawns an ephemeral LangGraph cell, isolating memory and processing.</li> <li><b>Execution:</b> all agents run in-memory, passing state dictionaries (`SLRState`) through the DAG.</li> <li><b>Ephemeral infrastructure:</b> the reasoning cell is destroyed after final report generation, leaving no persistent sensitive data.</li>
@@ -236,8 +236,8 @@ Total Papers Analyzed: 7
 
 <img src="images/slr_sample_node.png" alt="A paper metadata stored as a node in Neo4j" width = '80%'>
 
-## 🛠️ Infrastructure & Deployment Strategy
-### Containerization & Serverless Orchestration
+## 🛠️ Infrastructure & deployment strategy
+### Containerization & serverless orchestration
 <ul>
 <li>Engine: powered by LangGraph within a FastAPI wrapper, providing a stateful, iterative reasoning process.
 <li>Environment: packaged as a Docker container and hosted on Amazon ECR.
@@ -256,7 +256,7 @@ This observability layer enables performance tuning, cost optimization, and oper
 <img src="images/slr_observability.png" alt="GenAI Observability on LLM usage and performance">
 
 
-### Performance & Cost Discovery
+### Performance & cost discovery
 <ul>
 <li>Efficiency: by utilizing a serverless runtime, we eliminated the need for 24/7 EC2 compute, reducing idle infrastructure costs to nearly $0.
 <li>Cost breakdown:
@@ -266,7 +266,7 @@ This observability layer enables performance tuning, cost optimization, and oper
 </ul>
 </ul>
 
-## 📖 Key Technical Learnings
+## 📖 Key technical learnings
 <ul>
 <li>LLM outputs are inconsistent; robust JSON parsing and error repair are essential.</li>
 <li>Content filters may block outputs; pipeline gracefully handles blocked or incomplete responses.</li> <li>Multi-agent orchestration with LangGraph simplifies branching, retries, and conditional reasoning.</li>
@@ -275,7 +275,7 @@ This observability layer enables performance tuning, cost optimization, and oper
 <li>Stateless execution ensures privacy, auditability, and horizontal scalability.</li> 
 </ul>
 
-## 🚀 Next Steps
+## 🚀 Next steps
 <ul>
 <li>Streamlit front-end to submit queries and visualize graph data.</li>
 <li>Email or webhook notifications with query results.</li>
@@ -306,11 +306,11 @@ If you find this work useful, please cite or link to this GitHub repository. You
   title        = {SLR Multi-Agent System for Biomedical Knowledge Extraction},
   year         = {2026},
   url          = {https://github.com/adityatw/slr-cell},
-  note         = {LLM-Powered Multi-Agent AI for Transforming Systematic Reviews in Genomics & Biomedicine}
+  note         = {LLM-Powered multi-agent AI for transforming systematic reviews in Genomics & Biomedicine}
 }
 ```
 
-### AI Collaboration Disclosure
+### AI collaboration disclosure
 This project utilizes AI-assisted documentation. <b>ChatGPT</b> was used to synthesize technical findings and refine the architectural presentation found in this README. This disclosure maintains transparency regarding the role of generative AI in augmenting human-led research and development.
 
 Design and code © 2026 <a href="https://www.linkedin.com/in/aditya-wresniyandaka-3b2670" target = "_blank">Aditya Wresniyandaka</a> | Built and tested with Python 3.13
