@@ -261,8 +261,8 @@ This observability layer enables performance tuning, cost optimization, and oper
 <li>Efficiency: by utilizing a serverless runtime, we eliminated the need for 24/7 EC2 compute, reducing idle infrastructure costs to nearly $0.
 <li>Cost breakdown:
 <ul>
-<li>90% Model Reasoning: investment in high-reasoning tokens for accurate clinical insights.
-<li>10% Orchestration: minimal overhead for container execution and data transfer.
+<li>90% model reasoning: investment in high-reasoning tokens for accurate clinical insights.
+<li>10% orchestration: minimal overhead for container execution and data transfer.
 </ul>
 </ul>
 
@@ -311,6 +311,6 @@ If you find this work useful, please cite or link to this GitHub repository. You
 ```
 
 ### AI collaboration disclosure
-This project utilizes AI-assisted documentation. <b>ChatGPT</b> was used to synthesize technical findings and refine the architectural presentation found in this README. This disclosure maintains transparency regarding the role of generative AI in augmenting human-led research and development.
+This project utilizes AI-assisted documentation. <b>ChatGPT</b> was used to synthesize technical findings and refine the flow and architectural presentation found in this README. This disclosure maintains transparency regarding the role of generative AI in augmenting human-led research and development.
 
 Design and code © 2026 <a href="https://www.linkedin.com/in/aditya-wresniyandaka-3b2670" target = "_blank">Aditya Wresniyandaka</a> | Built and tested with Python 3.13
