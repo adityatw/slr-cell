@@ -232,9 +232,36 @@ Priority Breakdown:
 
 Total Papers Analyzed: 7
 ```
+
+Another sample consensus:
+```
+=== Final Consensus Report ===
+
+Third-generation EGFR TKIs like osimertinib demonstrate superior survival outcomes as first-line therapy for EGFR-mutated NSCLC, particularly in exon 19 deletion cases. Real-world evidence supports these findings across diverse populations. Resistance mechanisms remain critical, with T790M mutations most common after first/second-generation TKIs. Emerging resistance fusions like ALK require combination therapies.
+
+Key Findings:
+- Third-generation EGFR TKIs provide superior PFS and OS compared to first/second-generation inhibitors (median OS not reached vs 22.47 months for non-osimertinib sequences) 
+- Exon 19 deletion patients show greatest benefit from third-generation TKIs 
+- T790M resistance occurs in ~50% of cases after first/second-gen TKIs 
+- ALK fusions emerge as rare resistance mechanism (<5% of cases) treatable with dual TKI therapy 
+
+Priority Breakdown:
+- High: 7 papers
+- Medium: 3 papers
+- Low: 1 papers
+
+Total Papers Analyzed: 11
+```
+
 ### Sample paper metadata stored as nodes in Neo4j
 
-<img src="images/slr_sample_node.png" alt="A paper metadata stored as a node in Neo4j" width = '80%'>
+<div style="display: flex; gap: 10px;">
+<img src="images/slr_sample_node.png" alt="A paper metadata stored as a node in Neo4j" width = '48%'>
+<img src="images/slr_sample_node2.png" alt="A paper metadata stored as a node in Neo4j" width = '48%'>
+</div>
+
+### Sample gene-paper-drug stored as relationship in Neo4j
+<img src="images/slr_sample_graph.png" alt="A paper metadata stored as a node in Neo4j" width = '70%'>
 
 ## 🛠️ Infrastructure & deployment strategy
 ### Containerization & serverless orchestration
