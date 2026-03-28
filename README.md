@@ -270,7 +270,7 @@ Total Papers Analyzed: 11
 <li>Environment: packaged as a Docker container and hosted on Amazon ECR.
 <li>Orchestration: deployed via Amazon Bedrock AgentCore. This allows the system to remain stateless and purely consumption-based—only, incurring costs when an interpretation is requested.
 </ul>
-Sample configuration can be viewed at my other paper: <a href="https://github.com/adityatw/var-intel-cell">Variant Intelligence Cell (VIC)</a>
+Sample configuration can be viewed at my other paper: <a href="https://github.com/adityatw/var-intel-cell">Variant Intelligence Cell (VIC).</a>
 
 ### GenAI Observability amd runtime telemetry in CloudWatch
 
